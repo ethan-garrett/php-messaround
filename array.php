@@ -13,7 +13,7 @@ var_dump($arrays);
 echo '</pre>';
 
 foreach ($arrays as $array) {
-    if ($array % 2 !== 0 ){
+    if ($array % 2 !== 0 ) {
         echo $array;
     }
 }
