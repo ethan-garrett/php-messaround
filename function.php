@@ -12,10 +12,25 @@ $num2 = 8;
  * @return int result of num1 squared added to num2
  */
 
-function squareAdd (int $num1 , int $num2 = 0): int {
+/*function squareAdd (int $num1 , int $num2 = 0): int {
     $squared = $num1 * $num1;
     $squared += $num2;
     return $squared;
 }
+*/
+$names = 'Alice,Oliver,Robbie,Mike,Audrey,Anton,Lucy,Charlie,Chris';
 
-echo squareAdd($num1, $num2);
+function removeA(string $names): string {
+    $namesArray = explode(",", $names);
+    $newNames = [];
+
+    foreach ($namesArray as $name) {
+        if (substr($name, 0, 1) !=='A') {
+            $newNames[] = $name;
+        }
+    }
+    $results = implode(',', $newNames);
+    return $results;
+}
+
+var_dump(removeA($names));
