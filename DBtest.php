@@ -1,9 +1,9 @@
 <?php
 //save the conn in a variable
-$db = new PDO('mysql:host=db; dbname=excersize2', 'root', 'password');
+$db = new PDO('mysql:host=db; dbname=tennistourney', 'root', 'password');
 $db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
 //create the sql query to run
-$query = $db->prepare("SELECT `Name`, `Elo` , `Country` FROM `tetris`;");
+$query = $db->prepare("SELECT `Name`, `Elo` , `Country` FROM `tetris` ORDER BY `Country`;");
 //$query->bindParam(':name', $name);
 $query->execute();
 
