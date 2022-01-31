@@ -51,7 +51,7 @@ function game($player1, $player2) {
     $weather = weather();
 
     $player1Score = $player1[$surface] * $player1[$weather];
-    $player2Score = $player2[$surface] * $player1[$weather];
+    $player2Score = $player2[$surface] * $player2[$weather];
     echo $player1Score . '<br>';
     echo $player2Score . '<br>';
 
