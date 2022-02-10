@@ -1,8 +1,4 @@
 <?php
-$input = 112;
-$inputDistance = 1347;
-
-
 function distanceCalculation(int $input) : string
 {
     $distance = (1.6 * $input)+0.1;
@@ -16,7 +12,3 @@ function railingsPostsCalculation(float $inputDistance): string
 
     return 'This fence requires ' . $railings . ' railings and ' . $posts . ' posts';
 }
-
-echo distanceCalculation($input);
-echo '<br>';
-echo railingsPostsCalculation($inputDistance);
