@@ -1,5 +1,5 @@
 <?php
-require_once 'fenceChallenge.php';
+require_once 'functions.php';
 
 if (isset($_POST['railings']))
 {
